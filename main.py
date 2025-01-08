@@ -65,7 +65,7 @@ with sub_col1:
     classify_btn = st.button(
         "Classify",
         key = "classify_btn_key",
-        type='primary'
+        use_container_width=True
     )
 
 with sub_col2:
