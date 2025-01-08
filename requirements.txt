@@ -2,4 +2,4 @@ streamlit
 pandas
 numpy
 pyperclip
-sklearn
+scikit-learn

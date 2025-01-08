@@ -50,29 +50,31 @@ The categories are:
 
 
 st.markdown(short_description)
+
+st.divider()
 sub_col1, sub_col2 = st.columns([1, 1])
 with sub_col1:
     # news headline input
     news_headline = st.text_input(
-        "",
+        "Get category of your news headline now!",
         key = "news_headline_key",
         placeholder = "Enter news headline here",
     )
 
-# with col2:
-# button 
-classify_btn = st.button(
-    "Classify",
-    key = "classify_btn_key",
-    type='primary'
-)
+    # button 
+    classify_btn = st.button(
+        "Classify",
+        key = "classify_btn_key",
+        type='primary'
+    )
 
-# reserve space for the output
-output_space = st.empty()
+with sub_col2:
+    # reserve space for the output
+    output_space = st.empty()
 
-# if `classify` button clicked
-if st.session_state.classify_btn_key == True:
-    news_category = model.classify_news(news_headline)
-    output_space.write(news_category)
+    # if `classify` button clicked
+    if st.session_state.classify_btn_key == True:
+        news_category = model.classify_news(news_headline)
+        output_space.info(f"**Category:** {news_category.capitalize()}")
 
 
