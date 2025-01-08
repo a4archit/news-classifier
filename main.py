@@ -20,10 +20,10 @@ st.sidebar.divider()
 st.sidebar.write("I am creating this web application with \
 **Streamlit** and build an **Classifier Machine Learning Model**.\
 with **Text Vectorization** technique. ")
-st.sidebar.button(
-    "Copy src code url",
-    on_click=pyperclip.copy("https://www.github.com/a4archit/news-classifier")
-)
+# st.sidebar.button(
+#     "Copy src code url",
+#     on_click=pyperclip.copy("https://www.github.com/a4archit/news-classifier")
+# )
 
 st.sidebar.write("You can check my social media accounts: ")
 st.sidebar.write("[Kaggle](https://www.kaggle.com/architty108)")
