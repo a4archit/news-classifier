@@ -1,5 +1,5 @@
 import streamlit as st
-import pyperclip
+# import pyperclip
 from scripts import NewsClassifier
 
 
