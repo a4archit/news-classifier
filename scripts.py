@@ -13,7 +13,7 @@ class NewsClassifier:
         # loadin categories
         self.category = list(category_dict.keys())
 
-    def classify_news(self, news_headline) -> str:
+    def classify_news(self, news_headline: str) -> str:
         """
         This function takes in a string and returns the category of the news.
         """
@@ -32,6 +32,7 @@ class NewsClassifier:
     
 
 if __name__ == "__main__":
+    # testing this class
     new_classifier = NewsClassifier()
     news_headline = input("Enter news headline here: ")
     print(new_classifier.classify_news(news_headline))
